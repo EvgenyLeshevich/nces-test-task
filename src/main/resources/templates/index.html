@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Title</title>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/exporting.js"></script>
+    <script src="/js/export-data.js"></script>
+    <script src="/js/accessibility.js"></script>
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            src="/js/bootstrap.bundle.min.js"></script>
+    <link crossorigin="anonymous" href="/css/bootstrap.min.css"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+
+    <script src="/js/script.js"></script>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light">
+
+                <select aria-label=".form-select-lg example" class="form-select form-select-lg mb-3" id="title">
+                    <option selected>Выберите валюту:</option>
+                    <option value="EUR">Евро (EUR)</option>
+                    <option value="USD">Доллар США (USD)</option>
+                    <option value="RUB"> Российский рубль (RUB)</option>
+                </select>
+
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="startDate" placeholder="С" type="date">
+                    <label for="startDate">С</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="endDate" placeholder="По" type="date">
+                    <label for="endDate">По</label>
+                </div>
+
+                <input class="w-100 btn btn-lg btn-primary" onclick="doChart()" type="button" value="Вывести">
+            </form>
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-start">
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
