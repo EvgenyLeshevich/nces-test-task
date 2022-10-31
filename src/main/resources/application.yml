@@ -1,1 +1,7 @@
+spring:
+  mvc:
+    format:
+      date: yyyy-MM-dd
 
+url:
+  path: https://www.nbrb.by/API/ExRates/Rates/Dynamics/
