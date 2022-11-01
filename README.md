@@ -12,6 +12,7 @@ There's support for the following features:
 
 $ git clone https://github.com/EvgenyLeshevich/nces-test-task.git
 $ cd nces-test-task
+$ chmod +x ./gradlew (for linux)
 $ ./gradlew bootRun
 ```
 
